@@ -60,6 +60,8 @@ h2 {
 }
 
 .options-wrap > button {
+    color : var(--flat-black);
+    
     font-size: 64px;
     font-weight: bold;
 

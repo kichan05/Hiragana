@@ -2,6 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";
 
 import MainPage from "./../views/MainPage.vue"
 import QuestionPage from "./../views/QuestionPage.vue"
+import WordPage from "./../views/WordPage.vue"
 
 const routes = [
     {
@@ -17,7 +18,7 @@ const routes = [
     {
         path: "/word",
         name : "word",
-        component: MainPage,
+        component: WordPage,
     },
 ];
 

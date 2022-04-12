@@ -88,13 +88,8 @@ h3 {
     font-size: 28px;
     font-weight: 500;
 
-    flex-grow: 0;
-
-    border : 0;
-
     padding: 20px 44px;
     border-radius: 20px;
-    background-color: var(--main-color1);
 
     display: flex;
     flex-direction: column;
@@ -104,7 +99,8 @@ h3 {
 }
 
 .button-wrap > button:hover {
-    background-color: #2a51ff;
+    /* background-color: #2a51ff; */
+    background-color: var(--main-color1);
 }
 
 .button-wrap > button:active {
