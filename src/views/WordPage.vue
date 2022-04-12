@@ -3,16 +3,16 @@
     <div class="page-content">
 
         <div class="title">
-            <div class="question">あ</div>
+            <div class="question">{{ hiraganaData.hiragana }}</div>
             <div class="pronunciation">
-                a, 아
+                {{ hiraganaData["pronunciation-en"] }}, {{ hiraganaData["pronunciation-ko"] }}
             </div>
         </div>
 
         <div class="button-wrap">
             <div class="prev-next-wrap">
-                <button class="prev none-fill">이전</button>
-                <button class="next">다음</button>
+                <button @click="prevClick" class="prev none-fill" :class="{'enabled-none' : idx == 0}">이전</button>
+                <button @click="nextClick" class="next">다음</button>
             </div>
 
             <div class="option-wrap">
@@ -25,8 +25,37 @@
 </template>
 
 <script>
+import * as util from "./../util/util.js"
+import _hiraganaList from "./../data/hiragana.js"
+
 export default {
     name : "QuestionPage",
+    data(){return{
+        idx : 0,
+        hiraganaList : util.shuffle(_hiraganaList),
+        hiraganaData : {},
+    }},
+    methods : {
+        setHiragana(){
+            this.hiraganaData = this.hiraganaList[this.idx]
+        },
+        prevClick(){
+            if(this.idx != 0) 
+                this.idx--
+        },
+        nextClick(){
+            if(this.idx == this.hiraganaData.length - 1) this.idx = 0
+            this.idx++
+        }
+    },
+    watch : {
+        idx(){
+            this.setHiragana()
+        }
+    },
+    mounted() {
+        this.setHiragana()
+    },
 }
 </script>
 

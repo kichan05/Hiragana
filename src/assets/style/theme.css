@@ -36,6 +36,11 @@ button {
     cursor: pointer;
 }
 
+button.enabled-none {
+    opacity: 0.2;
+    cursor: unset;
+}
+
 .page {
     width : 100%;
     min-height : 100vh;

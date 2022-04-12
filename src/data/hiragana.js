@@ -1,321 +1,321 @@
 export default [
 {
-    'huragana': 'あ',
+    'hiragana': 'あ',
     'pronunciation-en': 'a',
     'pronunciation-ko': '아',
     'column': 'a',
     'row': 'a'
 },
 {
-    'huragana': 'い',
+    'hiragana': 'い',
     'pronunciation-en': 'ai',
     'pronunciation-ko': '이',
     'column': 'i',
     'row': 'a'
 },
 {
-    'huragana': 'う',
+    'hiragana': 'う',
     'pronunciation-en': 'au',
     'pronunciation-ko': '우',
     'column': 'u',
     'row': 'a'
 },
 {
-    'huragana': 'え',
+    'hiragana': 'え',
     'pronunciation-en': 'ae',
     'pronunciation-ko': '에',
     'column': 'e',
     'row': 'a'
 },
 {
-    'huragana': 'お',
+    'hiragana': 'お',
     'pronunciation-en': 'ao',
     'pronunciation-ko': '오',
     'column': 'o',
     'row': 'a'
 },
 {
-    'huragana': 'か',
+    'hiragana': 'か',
     'pronunciation-en': 'ka',
     'pronunciation-ko': '카',
     'column': 'a',
     'row': 'ka'
 },
 {
-    'huragana': 'き',
+    'hiragana': 'き',
     'pronunciation-en': 'ki',
     'pronunciation-ko': '키',
     'column': 'i',
     'row': 'ka'
 },
 {
-    'huragana': 'く',
+    'hiragana': 'く',
     'pronunciation-en': 'ku',
     'pronunciation-ko': '쿠',
     'column': 'u',
     'row': 'ka'
 },
 {
-    'huragana': 'け',
+    'hiragana': 'け',
     'pronunciation-en': 'ke',
     'pronunciation-ko': '케',
     'column': 'e',
     'row': 'ka'
 },
 {
-    'huragana': 'こ',
+    'hiragana': 'こ',
     'pronunciation-en': 'ko',
     'pronunciation-ko': '코',
     'column': 'o',
     'row': 'ka'
 },
 {
-    'huragana': 'さ',
+    'hiragana': 'さ',
     'pronunciation-en': 'sa',
     'pronunciation-ko': '사',
     'column': 'a',
     'row': 'sa'
 },
 {
-    'huragana': 'し',
+    'hiragana': 'し',
     'pronunciation-en': 'si',
     'pronunciation-ko': '시',
     'column': 'i',
     'row': 'sa'
 },
 {
-    'huragana': 'す',
+    'hiragana': 'す',
     'pronunciation-en': 'su',
     'pronunciation-ko': '스',
     'column': 'u',
     'row': 'sa'
 },
 {
-    'huragana': 'せ',
+    'hiragana': 'せ',
     'pronunciation-en': 'se',
     'pronunciation-ko': '세',
     'column': 'e',
     'row': 'sa'
 },
 {
-    'huragana': 'そ',
+    'hiragana': 'そ',
     'pronunciation-en': 'so',
     'pronunciation-ko': '소',
     'column': 'o',
     'row': 'sa'
 },
 {
-    'huragana': 'た',
+    'hiragana': 'た',
     'pronunciation-en': 'ta',
     'pronunciation-ko': '타',
     'column': 'a',
     'row': 'ta'
 },
 {
-    'huragana': 'ち',
+    'hiragana': 'ち',
     'pronunciation-en': 'ti',
     'pronunciation-ko': '치',
     'column': 'i',
     'row': 'ta'
 },
 {
-    'huragana': 'つ',
+    'hiragana': 'つ',
     'pronunciation-en': 'tu',
     'pronunciation-ko': '츠',
     'column': 'u',
     'row': 'ta'
 },
 {
-    'huragana': 'て',
+    'hiragana': 'て',
     'pronunciation-en': 'te',
     'pronunciation-ko': '테',
     'column': 'e',
     'row': 'ta'
 },
 {
-    'huragana': 'と',
+    'hiragana': 'と',
     'pronunciation-en': 'to',
     'pronunciation-ko': '토',
     'column': 'o',
     'row': 'ta'
 },
 {
-    'huragana': 'な',
+    'hiragana': 'な',
     'pronunciation-en': 'na',
     'pronunciation-ko': '나',
     'column': 'a',
     'row': 'na'
 },
 {
-    'huragana': 'に',
+    'hiragana': 'に',
     'pronunciation-en': 'ni',
     'pronunciation-ko': '니',
     'column': 'i',
     'row': 'na'
 },
 {
-    'huragana': 'ぬ',
+    'hiragana': 'ぬ',
     'pronunciation-en': 'nu',
     'pronunciation-ko': '누',
     'column': 'u',
     'row': 'na'
 },
 {
-    'huragana': 'ね',
+    'hiragana': 'ね',
     'pronunciation-en': 'ne',
     'pronunciation-ko': '네',
     'column': 'e',
     'row': 'na'
 },
 {
-    'huragana': 'の',
+    'hiragana': 'の',
     'pronunciation-en': 'no',
     'pronunciation-ko': '노',
     'column': 'o',
     'row': 'na'
 },
 {
-    'huragana': 'は',
+    'hiragana': 'は',
     'pronunciation-en': 'ha',
     'pronunciation-ko': '하',
     'column': 'a',
     'row': 'ha'
 },
 {
-    'huragana': 'ひ',
+    'hiragana': 'ひ',
     'pronunciation-en': 'hi',
     'pronunciation-ko': '히',
     'column': 'i',
     'row': 'ha'
 },
 {
-    'huragana': 'ふ',
+    'hiragana': 'ふ',
     'pronunciation-en': 'hu',
     'pronunciation-ko': '후',
     'column': 'u',
     'row': 'ha'
 },
 {
-    'huragana': 'へ',
+    'hiragana': 'へ',
     'pronunciation-en': 'he',
     'pronunciation-ko': '헤',
     'column': 'e',
     'row': 'ha'
 },
 {
-    'huragana': 'ほ',
+    'hiragana': 'ほ',
     'pronunciation-en': 'ho',
     'pronunciation-ko': '호',
     'column': 'o',
     'row': 'ha'
 },
 {
-    'huragana': 'ま',
+    'hiragana': 'ま',
     'pronunciation-en': 'ma',
     'pronunciation-ko': '마',
     'column': 'a',
     'row': 'ma'
 },
 {
-    'huragana': 'み',
+    'hiragana': 'み',
     'pronunciation-en': 'mi',
     'pronunciation-ko': '미',
     'column': 'i',
     'row': 'ma'
 },
 {
-    'huragana': 'む',
+    'hiragana': 'む',
     'pronunciation-en': 'mu',
     'pronunciation-ko': '무',
     'column': 'u',
     'row': 'ma'
 },
 {
-    'huragana': 'め',
+    'hiragana': 'め',
     'pronunciation-en': 'me',
     'pronunciation-ko': '메',
     'column': 'e',
     'row': 'ma'
 },
 {
-    'huragana': 'も',
+    'hiragana': 'も',
     'pronunciation-en': 'mo',
     'pronunciation-ko': '모',
     'column': 'o',
     'row': 'ma'
 },
 {
-    'huragana': 'や',
+    'hiragana': 'や',
     'pronunciation-en': 'ya',
     'pronunciation-ko': '야',
     'column': 'a',
     'row': 'ya'
 },
 {
-    'huragana': 'ゆ',
+    'hiragana': 'ゆ',
     'pronunciation-en': 'yu',
     'pronunciation-ko': '유',
     'column': 'u',
     'row': 'ya'
 },
 {
-    'huragana': 'よ',
+    'hiragana': 'よ',
     'pronunciation-en': 'yo',
     'pronunciation-ko': '요',
     'column': 'o',
     'row': 'ya'
 },
 {
-    'huragana': 'ら',
+    'hiragana': 'ら',
     'pronunciation-en': 'ra',
     'pronunciation-ko': '라',
     'column': 'a',
     'row': 'ra'
 },
 {
-    'huragana': 'り',
+    'hiragana': 'り',
     'pronunciation-en': 'ri',
     'pronunciation-ko': '리',
     'column': 'i',
     'row': 'ra'
 },
 {
-    'huragana': 'る',
+    'hiragana': 'る',
     'pronunciation-en': 'ru',
     'pronunciation-ko': '루',
     'column': 'u',
     'row': 'ra'
 },
 {
-    'huragana': 'れ',
+    'hiragana': 'れ',
     'pronunciation-en': 're',
     'pronunciation-ko': '레',
     'column': 'e',
     'row': 'ra'
 },
 {
-    'huragana': 'ろ',
+    'hiragana': 'ろ',
     'pronunciation-en': 'ro',
     'pronunciation-ko': '로',
     'column': 'o',
     'row': 'ra'
 },
 {
-    'huragana': 'わ',
+    'hiragana': 'わ',
     'pronunciation-en': 'wa',
     'pronunciation-ko': '와',
     'column': 'a',
     'row': 'wa'
 },
 {
-    'huragana': 'を',
+    'hiragana': 'を',
     'pronunciation-en': 'o',
     'pronunciation-ko': '오',
     'column': 'o',
     'row': 'wa'
 },
 {
-    'huragana': 'ん',
+    'hiragana': 'ん',
     'pronunciation-en': 'enn',
     'pronunciation-ko': '응',
     'column': null,
