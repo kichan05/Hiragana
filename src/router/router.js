@@ -1,10 +1,24 @@
 import { createWebHistory, createRouter } from "vue-router";
 
+import MainPage from "./../views/MainPage.vue"
+import QuestionPage from "./../views/QuestionPage.vue"
+
 const routes = [
-//   {
-//     path: "/경로",
-//     component: import해온 컴포넌트,
-//   }
+    {
+        path: "/",
+        name : "main",
+        component: MainPage,
+    },
+    {
+        path: "/question",
+        name : "question",
+        component: QuestionPage,
+    },
+    {
+        path: "/word",
+        name : "word",
+        component: MainPage,
+    },
 ];
 
 const router = createRouter({
