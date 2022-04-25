@@ -22,7 +22,7 @@
                 class="option"
                 :class="{'wrong-answer' : state[n] == 1, 'answer' : state[n] == 2}">
                 {{ i.ko }}
-                <span v-if="state[n] == 1"> {{ i.jp }} </span>
+                <template v-if="state[n] == 1">({{ i.jp }})</template>
             </div>
         </div>
     </div>
@@ -55,6 +55,9 @@ export default {
         this.state = [0, 0, 0, 0, 0]
       },
       checkAnswer(id, idx){
+
+        if(this.isAnswer) return
+
         if(id == this.answerId) {
           this.isAnswer = true
           this.state[idx] = 2
@@ -85,6 +88,8 @@ export default {
 }
 
 .header {
+  text-align: center;
+
   transition: 200ms;
 }
 
@@ -120,26 +125,20 @@ h2 {
     color : var(--flat-black);
 
     text-align: center;
-    font-size: 64px;
+    font-size: 40px;
     font-weight: bold;
 
+    padding: 12px 0;
+
+    border: solid 1px var(--gray5);
     border-radius: 20px;
-    border: solid 1px #858585;
     background-color: #fff;
+
+    position: relative;
 
     transition: 150ms;
 
-    position: relative;
-}
-
-.options-wrap > .option > span {
-  font-size: 48px;
-  font-weight: 400;
-
-  position: absolute;
-  right : 32px;
-  top : 50%;
-  transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .options-wrap > .option:hover {
@@ -159,4 +158,20 @@ h2 {
   color : white;
   border : 1px solid var(--main-color2);
 }
+
+@media (max-width: 900px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  .question {
+    font-size: 75px;
+  }
+
+  .options-wrap {
+    gap : 24px;
+  }
+
+}
+
 </style>
