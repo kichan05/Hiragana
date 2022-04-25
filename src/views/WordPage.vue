@@ -26,18 +26,18 @@
 
 <script>
 import * as util from "./../util/util.js"
-import _hiraganaList from "./../data/hiragana.js"
+import wordData from "./../data/wordData.js"
 
 export default {
     name : "QuestionPage",
     data(){return{
         idx : 0,
-        hiraganaList : util.shuffle(_hiraganaList),
+        wordData : util.shuffle(wordData),
         hiraganaData : {},
     }},
     methods : {
         setHiragana(){
-            this.hiraganaData = this.hiraganaList[this.idx]
+            this.hiraganaData = this.wordData[this.idx]
         },
         prevClick(){
             if(this.idx != 0) 
