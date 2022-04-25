@@ -3,7 +3,7 @@
     <Header/>
     <div class="page-content">
         <h1>覚える</h1>
-        <h2>즐거운 일본어<br>암기를 합시다.</h2>
+        <h2><span class="fun">{{ funText.slice(0, funIndex) }}</span> 일본어<br>암기를 합시다.</h2>
         <h3>원하는 암기를 선택해주세요</h3>
 
         <nav class="button-wrap">
@@ -31,8 +31,22 @@
 import Header from "@/components/Header";
 export default {
     name : "MainPage",
+    data(){return{
+        funText : "즐거고 재밌는",
+        funIndex : -1, //this.funText.length,
+    }},
     components : {
         Header,
+    },
+    mounted() {
+        this.funIndex = this.funText.length
+        setTimeout(()=>{
+            setInterval(()=> {
+                if(this.funIndex === 0) return
+
+                this.funIndex--;
+            }, 150)
+        }, 700)
     }
 }
 </script>
@@ -76,6 +90,12 @@ h2 {
     font-size: 50px;
 
     text-align: center;
+}
+
+.fun {
+    text-decoration: 10px;
+    font-weight: 500;
+    color: var(--gray5);
 }
 
 h3 {
