@@ -1,18 +1,13 @@
 <template>
 <div class="page">
     <div class="page-content">
-<!--      {{wordList}}-->
-<!--      <hr>-->
-<!--      {{ optionList }}-->
-<!--      <hr>-->
-<!--      {{ answerId }}-->
-        <div class="header" :class="{'isAnswer' : isAnswer}">
+        <div class="title" :class="{'isAnswer' : isAnswer}">
           <h2>
               <span>다음에 히라가나에 맞는</span>
               <span class="bold">음을 선택해주세요.</span>
           </h2>
 
-          <span class="question">{{ wordList[0].jp }}</span>
+          <span class="question">{{ questionMode == 0 ? wordList[0].jp : wordList[0].ko }}</span>
         </div>
 
         <div class="options-wrap">
@@ -21,9 +16,12 @@
                 @click="()=>{checkAnswer(i.id, n)}"
                 class="option"
                 :class="{'wrong-answer' : state[n] == 1, 'answer' : state[n] == 2}">
-                {{ i.ko }}
-                <template v-if="state[n] == 1">({{ i.jp }})</template>
+                {{ questionMode == 0 ? optionList[n].ko : optionList[n].jp }}
+                <template v-if="state[n] == 1">({{ questionMode == 0 ? optionList[n].jp : optionList[n].ko }})</template>
             </div>
+
+            <button class="mode-change-btn only-border" v-if="questionMode == 0" @click="questionMode = 1"><bold>히라가나를</bold> 보고 뜻을 고르기</button>
+            <button class="mode-change-btn only-border" v-else @click="questionMode =  0"><bold>뜻을</bold> 보고 히라가나를 고르기</button>
         </div>
     </div>
 </div>
@@ -39,12 +37,14 @@ let optionList = util.shuffle(wordList.slice(0, 5))
 export default {
     name : "QuestionPage",
     data(){return{
-      wordList,
-      optionList,
+        wordList,
+        optionList,
 
-      answerId : -1,
-      state : [0, 0, 0, 0, 0],
-      isAnswer : false,
+        answerId : -1,
+        state : [0, 0, 0, 0, 0],
+        isAnswer : false,
+
+        questionMode : this.$route.params.mode
     }},
     methods : {
       setQuestion(){
@@ -72,7 +72,8 @@ export default {
       }
     },
     mounted() {
-      this.setQuestion()
+        if(this.questionMode == undefined) this.questionMode = 0
+        this.setQuestion()
     }
 }
 </script>
@@ -87,13 +88,13 @@ export default {
     align-items: center;
 }
 
-.header {
+.title {
   text-align: center;
 
   transition: 200ms;
 }
 
-.header.isAnswer {
+.title.isAnswer {
   color : var(--main-color2);
 }
 
@@ -164,6 +165,18 @@ h2 {
     border : 1px solid var(--main-color2);
 }
 
+.mode-change-btn {
+    color: var(--main-color1);
+    font-size: 24px;
+}
+
+.mode-change-btn:hover {
+    color: white;
+    background-color: var(--main-color1);
+
+    transition: 200ms;
+}
+
 @media (max-width: 900px) {
   h2 {
     font-size: 24px;
@@ -176,7 +189,6 @@ h2 {
   .options-wrap {
     gap : 24px;
   }
-
 }
 
 </style>

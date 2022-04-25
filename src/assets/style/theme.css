@@ -24,6 +24,10 @@
     --flat-black : #121212;
 }
 
+bold {
+    font-weight: bold;
+}
+
 button {
     color: #fff;
 
@@ -39,6 +43,17 @@ button {
 button.enabled-none {
     opacity: 0.2;
     cursor: unset;
+}
+
+button.only-border {
+    color : var(--flat-black);
+    background-color: transparent;
+    border : 2px solid var(--main-color1);
+}
+
+button:active {
+    opacity: 0.7;
+    transform: scale(0.985);
 }
 
 .page {
