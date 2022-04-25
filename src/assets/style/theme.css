@@ -61,6 +61,7 @@ button:active {
     min-height : 100vh;
 
     padding : 16px;
+    padding-top: 70px;
 }
 
 .page-content {

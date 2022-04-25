@@ -1,5 +1,6 @@
 <template>
 <div class="page">
+    <Header/>
     <div class="page-content">
         <div class="title" :class="{'isAnswer' : isAnswer}">
           <h2>
@@ -31,6 +32,8 @@
 import * as util from "./../util/util.js"
 import wordData from "./../data/wordData"
 
+import Header from "@/components/Header";
+
 let wordList = util.shuffle(wordData)
 let optionList = util.shuffle(wordList.slice(0, 5))
 
@@ -46,6 +49,9 @@ export default {
 
         questionMode : this.$route.params.mode
     }},
+    components : {
+        Header,
+    },
     methods : {
       setQuestion(){
         this.wordList = util.shuffle(this.wordList)

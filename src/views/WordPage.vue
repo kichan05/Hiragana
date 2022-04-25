@@ -1,5 +1,7 @@
 <template>
 <div class="page">
+    <Header/>
+
     <div class="page-content">
 
         <div class="title">
@@ -28,6 +30,8 @@
 import * as util from "./../util/util.js"
 import wordData from "./../data/wordData.js"
 
+import Header from "@/components/Header";
+
 export default {
     name : "QuestionPage",
     data(){return{
@@ -35,6 +39,9 @@ export default {
         wordData : util.shuffle(wordData),
         hiraganaData : {},
     }},
+    components : {
+        Header,
+    },
     methods : {
         setHiragana(){
             this.hiraganaData = this.wordData[this.idx]

@@ -1,5 +1,6 @@
 <template>
 <div class="page">
+    <Header/>
     <div class="page-content">
         <h1>覚える</h1>
         <h2>즐거운 일본어<br>암기를 합시다.</h2>
@@ -27,8 +28,12 @@
 </template>
 
 <script>
+import Header from "@/components/Header";
 export default {
     name : "MainPage",
+    components : {
+        Header,
+    }
 }
 </script>
 
