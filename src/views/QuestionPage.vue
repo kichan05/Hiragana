@@ -147,6 +147,11 @@ h2 {
     border : 1px solid var(--main-color1);
 }
 
+.options-wrap > .option:active {
+    opacity: 0.7;
+    transform: scale(0.985);
+}
+
 .options-wrap > .option.wrong-answer {
   background-color: var(--flat-red);
   color : white;
@@ -154,9 +159,9 @@ h2 {
 }
 
 .options-wrap > .option.answer {
-  background-color: var(--main-color2);
-  color : white;
-  border : 1px solid var(--main-color2);
+    background-color: var(--main-color2);
+    color : white;
+    border : 1px solid var(--main-color2);
 }
 
 @media (max-width: 900px) {

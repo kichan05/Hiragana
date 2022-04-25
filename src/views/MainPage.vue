@@ -2,7 +2,7 @@
 <div class="page">
     <div class="page-content">
         <h1>覚える</h1>
-        <h2>즐거운 히라가나<br>암기를 합시다.</h2>
+        <h2>즐거운 일본어<br>암기를 합시다.</h2>
         <h3>원하는 암기를 선택해주세요</h3>
 
         <nav class="button-wrap">
@@ -42,6 +42,10 @@ export default {
 
 .page-content {
     max-width: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -51,13 +55,15 @@ h1 {
 
     text-align: center;
 
-    background: linear-gradient(96.52deg, #00BDF9 0%, #5C0FFF 100%);
+    background: linear-gradient(94deg, rgba(0,189,249,1) 0%, rgba(92,15,255,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
 
-    margin-top : 152px; 
+  margin: 152px auto 0;
+
+  display: inline-block;
 }
 
 h2 { 
@@ -77,6 +83,8 @@ h3 {
 }
 
 .button-wrap {
+    width: 100%;
+
     margin-top : 126px;
 
     display: grid;
