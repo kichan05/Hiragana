@@ -6,19 +6,24 @@
 <!--      {{ optionList }}-->
 <!--      <hr>-->
 <!--      {{ answerId }}-->
+        <div class="header" :class="{'isAnswer' : isAnswer}">
+          <h2>
+              <span>다음에 히라가나에 맞는</span>
+              <span class="bold">음을 선택해주세요.</span>
+          </h2>
 
-        <h2>
-            <span>다음에 히라가나에 맞는</span>
-            <span class="bold">음을 선택해주세요.</span>
-        </h2>
+          <span class="question">{{ wordList[0].jp }}</span>
+        </div>
 
-        <span class="question">{{ wordList[0].jp }}</span>
-        
         <div class="options-wrap">
-            <button
+            <div
                 v-for="i, n in optionList" :key="n"
                 @click="()=>{checkAnswer(i.id, n)}"
-                :class="{'wrong-answer' : state[n] == 1}">{{ i.ko }}</button>
+                class="option"
+                :class="{'wrong-answer' : state[n] == 1, 'answer' : state[n] == 2}">
+                {{ i.ko }}
+                <span v-if="state[n] == 1"> {{ i.jp }} </span>
+            </div>
         </div>
     </div>
 </div>
@@ -39,11 +44,24 @@ export default {
 
       answerId : -1,
       state : [0, 0, 0, 0, 0],
+      isAnswer : false,
     }},
     methods : {
+      setQuestion(){
+        this.wordList = util.shuffle(this.wordList)
+        this.optionList = util.shuffle(this.wordList.slice(0, 5))
+        this.answerId = wordList[0].id
+        this.isAnswer = false
+        this.state = [0, 0, 0, 0, 0]
+      },
       checkAnswer(id, idx){
         if(id == this.answerId) {
-          alert("정다입니다.")
+          this.isAnswer = true
+          this.state[idx] = 2
+
+          setTimeout(()=>{
+            this.setQuestion()
+          }, 1000)
         }
         else {
           this.state[idx] = 1
@@ -51,7 +69,7 @@ export default {
       }
     },
     mounted() {
-        this.answerId = wordList[0].id
+      this.setQuestion()
     }
 }
 </script>
@@ -64,6 +82,14 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.header {
+  transition: 200ms;
+}
+
+.header.isAnswer {
+  color : var(--main-color2);
 }
 
 h2 {
@@ -90,9 +116,10 @@ h2 {
     gap : 48px;
 }
 
-.options-wrap > button {
+.options-wrap > .option {
     color : var(--flat-black);
-    
+
+    text-align: center;
     font-size: 64px;
     font-weight: bold;
 
@@ -101,15 +128,35 @@ h2 {
     background-color: #fff;
 
     transition: 150ms;
+
+    position: relative;
 }
 
-.options-wrap > button:hover {
+.options-wrap > .option > span {
+  font-size: 48px;
+  font-weight: 400;
+
+  position: absolute;
+  right : 32px;
+  top : 50%;
+  transform: translateY(-50%);
+}
+
+.options-wrap > .option:hover {
     color : #fff;
     background-color: var(--main-color1);
+    border : 1px solid var(--main-color1);
 }
 
-.options-wrap > button.wrong-answer {
+.options-wrap > .option.wrong-answer {
   background-color: var(--flat-red);
   color : white;
+  border : 1px solid var(--flat-red);
+}
+
+.options-wrap > .option.answer {
+  background-color: var(--main-color2);
+  color : white;
+  border : 1px solid var(--main-color2);
 }
 </style>
