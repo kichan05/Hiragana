@@ -5,21 +5,26 @@
     <div class="page-content">
 
         <div class="title">
-            <div class="question">{{ hiraganaData.hiragana }}</div>
+
+            <div class="question">{{ isHideHiragana ? '???' : wordData.jp }}</div>
             <div class="pronunciation">
-                {{ hiraganaData["pronunciation-en"] }}, {{ hiraganaData["pronunciation-ko"] }}
+                {{ isHideMean ? '???' : wordData.ko }}, {{ isHideWell ? '???' : wordData.en }}
             </div>
         </div>
 
         <div class="button-wrap">
             <div class="prev-next-wrap">
-                <button @click="prevClick" class="prev none-fill" :class="{'enabled-none' : idx == 0}">이전</button>
+                <button @click="prevClick" class="prev only-border" :class="{'enabled-none' : idx === 0, 'none-dragging' : idx == 0}">이전</button>
                 <button @click="nextClick" class="next">다음</button>
             </div>
 
             <div class="option-wrap">
-                <button>히라가나 숨기기</button>
-                <button>음 숨기기</button>
+                <button
+                    @click="()=>{isHideHiragana = !isHideHiragana}" :class="{'only-border' : isHideHiragana}">히라가나 숨기기</button>
+                <button
+                    @click="()=>{isHideWell = !isHideWell}" :class="{'only-border' : isHideWell}">음 숨기기</button>
+                <button
+                    @click="()=>{isHideMean = !isHideMean}" :class="{'only-border' : isHideMean}">뜻 숨기기</button>
             </div>
         </div>
     </div>
@@ -33,30 +38,35 @@ import wordData from "./../data/wordData.js"
 import Header from "@/components/Header";
 
 export default {
-    name : "QuestionPage",
-    data(){return{
-        idx : 0,
-        wordData : util.shuffle(wordData),
-        hiraganaData : {},
-    }},
-    components : {
+    name: "QuestionPage",
+    data() {
+        return {
+            idx: 0,
+            wordDataList: util.shuffle(wordData),
+            wordData: {},
+            isHideHiragana : false,
+            isHideWell : false,
+            isHideMean : false,
+        }
+    },
+    components: {
         Header,
     },
-    methods : {
-        setHiragana(){
-            this.hiraganaData = this.wordData[this.idx]
+    methods: {
+        setHiragana() {
+            this.wordData = this.wordDataList[this.idx]
         },
-        prevClick(){
-            if(this.idx != 0) 
+        prevClick() {
+            if (this.idx !== 0)
                 this.idx--
         },
-        nextClick(){
-            if(this.idx == this.hiraganaData.length - 1) this.idx = 0
+        nextClick() {
+            if (this.idx === this.wordData.length - 1) this.idx = 0
             this.idx++
         }
     },
-    watch : {
-        idx(){
+    watch: {
+        idx() {
             this.setHiragana()
         }
     },
@@ -74,6 +84,10 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.title {
+    text-align: center;
 }
 
 .question {
@@ -118,10 +132,9 @@ button {
     font-weight: 600;
 }
 
-button.none-fill {
-    color : var(--flat-black);
-    border: solid 2px var(--main-color1);
-
-    background-color: #fff;
+@media (max-width: 900px) {
+    .question {
+        font-size: 100px;
+    }
 }
 </style>

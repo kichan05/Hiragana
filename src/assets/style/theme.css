@@ -33,7 +33,7 @@ button {
 
     padding : 10px 0;
 
-    border : 0;
+    border : 1px solid var(--main-color1);
     border-radius: 12px;
     background-color: var(--main-color1);
 
@@ -51,7 +51,7 @@ button.only-border {
     border : 2px solid var(--main-color1);
 }
 
-button:active {
+button:not(.enabled-none):active {
     opacity: 0.7;
     transform: scale(0.985);
 }
