@@ -199,7 +199,7 @@ export default [
     },
     {
         "id" : 34,
-        "ko" : "와타시",
+        "ko" : "나",
         "jp" : "わたし",
         "en" : "watasi",
     },
