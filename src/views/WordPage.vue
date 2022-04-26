@@ -54,14 +54,14 @@ export default {
     },
     methods: {
         setHiragana() {
-            this.wordData = this.wordDataList[this.idx]
+            this.wordData = this.wordDataList[this.idx % this.wordDataList.length]
         },
         prevClick() {
             if (this.idx !== 0)
                 this.idx--
         },
         nextClick() {
-            if (this.idx === this.wordData.length - 1) this.idx = 0
+            // if (this.idx === this.wordDataList.length - 1) this.idx = -1
             this.idx++
         }
     },

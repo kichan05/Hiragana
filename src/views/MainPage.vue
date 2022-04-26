@@ -105,6 +105,10 @@ h3 {
     color: #838383;
 
     margin-top: 38px;
+
+    animation-name : comment-animation;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
 }
 
 .button-wrap {
@@ -145,4 +149,16 @@ h3 {
 .button-wrap > button * {
     color: #fff;
 }
+
+@keyframes comment-animation {
+    0%, 100% {
+        /*transform: scale(1);*/
+        transform: translateY(0);
+    }
+    50% {
+        /*transform: scale(1.05);*/
+        transform: translateY(20px);
+    }
+}
+
 </style> 
