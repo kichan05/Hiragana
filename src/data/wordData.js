@@ -127,7 +127,7 @@ export default [
     },
     {
         "id" : 22,
-        "ko" : "젖가락",
+        "ko" : "젓가락",
         "jp" : "はし",
         "en" : "hasi",
     },
@@ -145,7 +145,7 @@ export default [
     },
     {
         "id" : 25,
-        "ko" : "키모노",
+        "ko" : "기모노",
         "jp" : "きもの",
         "en" : "kimono",
     },
@@ -181,7 +181,7 @@ export default [
     },
     {
         "id" : 31,
-        "ko" : "벗꽃",
+        "ko" : "벚꽃",
         "jp" : "さくら",
         "en" : "sakura",
     },
