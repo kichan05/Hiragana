@@ -212,7 +212,7 @@ export default [
     {
         "id" : 36,
         "ko" : "온천",
-        "jp" : "おんてん",
+        "jp" : "おんせん",
         "en" : "onnsen",
     },
 ]
