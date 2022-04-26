@@ -8,7 +8,7 @@ export default [
     'row': 'a'
 },
 {
-    "id" : 1,
+    "id" : 2,
     'hiragana': 'い',
     'pronunciation-en': 'ai',
     'pronunciation-ko': '이',
@@ -16,7 +16,7 @@ export default [
     'row': 'a'
 },
 {
-    "id" : 1,
+    "id" : 3,
     'hiragana': 'う',
     'pronunciation-en': 'au',
     'pronunciation-ko': '우',
@@ -24,7 +24,7 @@ export default [
     'row': 'a'
 },
 {
-    "id" : 1,
+    "id" : 4,
     'hiragana': 'え',
     'pronunciation-en': 'ae',
     'pronunciation-ko': '에',
@@ -32,7 +32,7 @@ export default [
     'row': 'a'
 },
 {
-    "id" : 1,
+    "id" : 5,
     'hiragana': 'お',
     'pronunciation-en': 'ao',
     'pronunciation-ko': '오',
@@ -40,7 +40,7 @@ export default [
     'row': 'a'
 },
 {
-    "id" : 1,
+    "id" : 6,
     'hiragana': 'か',
     'pronunciation-en': 'ka',
     'pronunciation-ko': '카',
@@ -48,7 +48,7 @@ export default [
     'row': 'ka'
 },
 {
-    "id" : 1,
+    "id" : 7,
     'hiragana': 'き',
     'pronunciation-en': 'ki',
     'pronunciation-ko': '키',
@@ -56,7 +56,7 @@ export default [
     'row': 'ka'
 },
 {
-    "id" : 1,
+    "id" : 8,
     'hiragana': 'く',
     'pronunciation-en': 'ku',
     'pronunciation-ko': '쿠',
@@ -64,7 +64,7 @@ export default [
     'row': 'ka'
 },
 {
-    "id" : 1,
+    "id" : 9,
     'hiragana': 'け',
     'pronunciation-en': 'ke',
     'pronunciation-ko': '케',
@@ -72,7 +72,7 @@ export default [
     'row': 'ka'
 },
 {
-    "id" : 1,
+    "id" : 10,
     'hiragana': 'こ',
     'pronunciation-en': 'ko',
     'pronunciation-ko': '코',
@@ -80,7 +80,7 @@ export default [
     'row': 'ka'
 },
 {
-    "id" : 1,
+    "id" : 11,
     'hiragana': 'さ',
     'pronunciation-en': 'sa',
     'pronunciation-ko': '사',
@@ -88,7 +88,7 @@ export default [
     'row': 'sa'
 },
 {
-    "id" : 1,
+    "id" : 12,
     'hiragana': 'し',
     'pronunciation-en': 'si',
     'pronunciation-ko': '시',
@@ -96,7 +96,7 @@ export default [
     'row': 'sa'
 },
 {
-    "id" : 1,
+    "id" : 13,
     'hiragana': 'す',
     'pronunciation-en': 'su',
     'pronunciation-ko': '스',
@@ -104,7 +104,7 @@ export default [
     'row': 'sa'
 },
 {
-    "id" : 1,
+    "id" : 14,
     'hiragana': 'せ',
     'pronunciation-en': 'se',
     'pronunciation-ko': '세',
@@ -112,7 +112,7 @@ export default [
     'row': 'sa'
 },
 {
-    "id" : 1,
+    "id" : 15,
     'hiragana': 'そ',
     'pronunciation-en': 'so',
     'pronunciation-ko': '소',
@@ -120,7 +120,7 @@ export default [
     'row': 'sa'
 },
 {
-    "id" : 1,
+    "id" : 16,
     'hiragana': 'た',
     'pronunciation-en': 'ta',
     'pronunciation-ko': '타',
@@ -128,7 +128,7 @@ export default [
     'row': 'ta'
 },
 {
-    "id" : 1,
+    "id" : 17,
     'hiragana': 'ち',
     'pronunciation-en': 'ti',
     'pronunciation-ko': '치',
@@ -136,7 +136,7 @@ export default [
     'row': 'ta'
 },
 {
-    "id" : 1,
+    "id" : 18,
     'hiragana': 'つ',
     'pronunciation-en': 'tu',
     'pronunciation-ko': '츠',
@@ -144,7 +144,7 @@ export default [
     'row': 'ta'
 },
 {
-    "id" : 1,
+    "id" : 19,
     'hiragana': 'て',
     'pronunciation-en': 'te',
     'pronunciation-ko': '테',
@@ -152,7 +152,7 @@ export default [
     'row': 'ta'
 },
 {
-    "id" : 1,
+    "id" : 20,
     'hiragana': 'と',
     'pronunciation-en': 'to',
     'pronunciation-ko': '토',
@@ -160,7 +160,7 @@ export default [
     'row': 'ta'
 },
 {
-    "id" : 1,
+    "id" : 21,
     'hiragana': 'な',
     'pronunciation-en': 'na',
     'pronunciation-ko': '나',
@@ -168,7 +168,7 @@ export default [
     'row': 'na'
 },
 {
-    "id" : 1,
+    "id" : 21,
     'hiragana': 'に',
     'pronunciation-en': 'ni',
     'pronunciation-ko': '니',
@@ -176,7 +176,7 @@ export default [
     'row': 'na'
 },
 {
-    "id" : 1,
+    "id" : 23,
     'hiragana': 'ぬ',
     'pronunciation-en': 'nu',
     'pronunciation-ko': '누',
@@ -184,7 +184,7 @@ export default [
     'row': 'na'
 },
 {
-    "id" : 1,
+    "id" : 24,
     'hiragana': 'ね',
     'pronunciation-en': 'ne',
     'pronunciation-ko': '네',
@@ -192,7 +192,7 @@ export default [
     'row': 'na'
 },
 {
-    "id" : 1,
+    "id" : 25,
     'hiragana': 'の',
     'pronunciation-en': 'no',
     'pronunciation-ko': '노',
@@ -200,7 +200,7 @@ export default [
     'row': 'na'
 },
 {
-    "id" : 1,
+    "id" : 26,
     'hiragana': 'は',
     'pronunciation-en': 'ha',
     'pronunciation-ko': '하',
@@ -208,7 +208,7 @@ export default [
     'row': 'ha'
 },
 {
-    "id" : 1,
+    "id" : 27,
     'hiragana': 'ひ',
     'pronunciation-en': 'hi',
     'pronunciation-ko': '히',
@@ -216,7 +216,7 @@ export default [
     'row': 'ha'
 },
 {
-    "id" : 1,
+    "id" : 28,
     'hiragana': 'ふ',
     'pronunciation-en': 'hu',
     'pronunciation-ko': '후',
@@ -224,7 +224,7 @@ export default [
     'row': 'ha'
 },
 {
-    "id" : 1,
+    "id" : 29,
     'hiragana': 'へ',
     'pronunciation-en': 'he',
     'pronunciation-ko': '헤',
@@ -232,7 +232,7 @@ export default [
     'row': 'ha'
 },
 {
-    "id" : 1,
+    "id" : 30,
     'hiragana': 'ほ',
     'pronunciation-en': 'ho',
     'pronunciation-ko': '호',
@@ -240,7 +240,7 @@ export default [
     'row': 'ha'
 },
 {
-    "id" : 1,
+    "id" : 31,
     'hiragana': 'ま',
     'pronunciation-en': 'ma',
     'pronunciation-ko': '마',
@@ -248,7 +248,7 @@ export default [
     'row': 'ma'
 },
 {
-    "id" : 1,
+    "id" : 32,
     'hiragana': 'み',
     'pronunciation-en': 'mi',
     'pronunciation-ko': '미',
@@ -256,7 +256,7 @@ export default [
     'row': 'ma'
 },
 {
-    "id" : 1,
+    "id" : 33,
     'hiragana': 'む',
     'pronunciation-en': 'mu',
     'pronunciation-ko': '무',
@@ -264,7 +264,7 @@ export default [
     'row': 'ma'
 },
 {
-    "id" : 1,
+    "id" : 34,
     'hiragana': 'め',
     'pronunciation-en': 'me',
     'pronunciation-ko': '메',
@@ -272,7 +272,7 @@ export default [
     'row': 'ma'
 },
 {
-    "id" : 1,
+    "id" : 35,
     'hiragana': 'も',
     'pronunciation-en': 'mo',
     'pronunciation-ko': '모',
@@ -280,7 +280,7 @@ export default [
     'row': 'ma'
 },
 {
-    "id" : 1,
+    "id" : 36,
     'hiragana': 'や',
     'pronunciation-en': 'ya',
     'pronunciation-ko': '야',
@@ -288,7 +288,7 @@ export default [
     'row': 'ya'
 },
 {
-    "id" : 1,
+    "id" : 37,
     'hiragana': 'ゆ',
     'pronunciation-en': 'yu',
     'pronunciation-ko': '유',
@@ -296,7 +296,7 @@ export default [
     'row': 'ya'
 },
 {
-    "id" : 1,
+    "id" : 38,
     'hiragana': 'よ',
     'pronunciation-en': 'yo',
     'pronunciation-ko': '요',
@@ -304,7 +304,7 @@ export default [
     'row': 'ya'
 },
 {
-    "id" : 1,
+    "id" : 39,
     'hiragana': 'ら',
     'pronunciation-en': 'ra',
     'pronunciation-ko': '라',
@@ -312,7 +312,7 @@ export default [
     'row': 'ra'
 },
 {
-    "id" : 1,
+    "id" : 40,
     'hiragana': 'り',
     'pronunciation-en': 'ri',
     'pronunciation-ko': '리',
@@ -320,7 +320,7 @@ export default [
     'row': 'ra'
 },
 {
-    "id" : 1,
+    "id" : 41,
     'hiragana': 'る',
     'pronunciation-en': 'ru',
     'pronunciation-ko': '루',
@@ -328,7 +328,7 @@ export default [
     'row': 'ra'
 },
 {
-    "id" : 1,
+    "id" : 42,
     'hiragana': 'れ',
     'pronunciation-en': 're',
     'pronunciation-ko': '레',
@@ -336,7 +336,7 @@ export default [
     'row': 'ra'
 },
 {
-    "id" : 1,
+    "id" : 43,
     'hiragana': 'ろ',
     'pronunciation-en': 'ro',
     'pronunciation-ko': '로',
@@ -344,7 +344,7 @@ export default [
     'row': 'ra'
 },
 {
-    "id" : 1,
+    "id" : 44,
     'hiragana': 'わ',
     'pronunciation-en': 'wa',
     'pronunciation-ko': '와',
@@ -352,7 +352,7 @@ export default [
     'row': 'wa'
 },
 {
-    "id" : 1,
+    "id" : 45,
     'hiragana': 'を',
     'pronunciation-en': 'o',
     'pronunciation-ko': '오',
@@ -360,7 +360,7 @@ export default [
     'row': 'wa'
 },
 {
-    "id" : 1,
+    "id" : 46,
     'hiragana': 'ん',
     'pronunciation-en': 'enn',
     'pronunciation-ko': '응',

@@ -1,8 +1,9 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 import MainPage from "./../views/MainPage.vue"
-import QuestionPage from "./../views/QuestionPage.vue"
+import QuestionPage from "../views/QuestionWordPage.vue"
 import WordPage from "./../views/WordPage.vue"
+import QuestionHiraganaPage from "./../views/QuestionHiraganePage"
 
 const routes = [
     {
@@ -12,8 +13,13 @@ const routes = [
     },
     {
         path: "/question",
-        name : "question",
+        name : "questionWord",
         component: QuestionPage,
+    },
+    {
+        path: "/questionHiragana",
+        name : "questionHiragana",
+        component: QuestionHiraganaPage,
     },
     {
         path: "/word",

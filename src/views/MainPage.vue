@@ -6,14 +6,32 @@
         <h2><span class="fun">{{ funText.slice(0, funIndex) }}</span> 일본어<br>암기를 합시다.</h2>
         <h3>원하는 암기를 선택해주세요</h3>
 
-        <nav class="button-wrap">
+        <nav class="button-wrap word">
             <button
-                @click="$router.push({name : 'question', params : {'mode' : 0}})">
-                <span>히라가나를 보고</span>
-                <span class="bold">음을 맞추기</span>
+                @click="$router.push({name : 'questionWord', params : {'mode' : 0}})">
+                <span>단어를 보고</span>
+                <span class="bold">뜻을 맞추기</span>
             </button> 
             <button
-                @click="$router.push({name : 'question', params : {'mode' : 1}})">
+                @click="$router.push({name : 'questionWord', params : {'mode' : 1}})">
+                <span>뜻를 보고</span>
+                <span class="bold">단어를 맞추기</span>
+            </button>
+            <button
+                @click="$router.push({name : 'word'})">
+                <span>단어를</span>
+                <span class="bold">하나씩 넘겨 보기</span>
+            </button>
+        </nav>
+
+        <nav class="button-wrap hiragana">
+            <button
+                @click="$router.push({name : 'questionHiragana', params : {'mode' : 0}})">
+                <span>히라가나를 보고</span>
+                <span class="bold">음을 맞추기</span>
+            </button>
+            <button
+                @click="$router.push({name : 'questionHiragana', params : {'mode' : 1}})">
                 <span>음를 보고</span>
                 <span class="bold">히라가나를 맞추기</span>
             </button>
@@ -115,9 +133,9 @@ h3 {
 
     margin-top: 38px;
 
-    animation-name : comment-animation;
-    animation-duration: 2000ms;
-    animation-iteration-count: infinite;
+    /*animation-name : comment-animation;*/
+    /*animation-duration: 2000ms;*/
+    /*animation-iteration-count: infinite;*/
 }
 
 .button-wrap {
@@ -157,6 +175,11 @@ h3 {
 
 .button-wrap > button * {
     color: #fff;
+}
+
+.button-wrap.hiragana > button {
+    border-color: var(--main-color2);
+    background-color: var(--main-color2);
 }
 
 @keyframes comment-animation {
