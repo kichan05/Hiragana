@@ -2,7 +2,7 @@
 <div class="page">
     <Header/>
     <div class="page-content">
-        <h1>覚える</h1>
+        <h1 @click="easterEgg">覚える</h1>
         <h2><span class="fun">{{ funText.slice(0, funIndex) }}</span> 일본어<br>암기를 합시다.</h2>
         <h3>원하는 암기를 선택해주세요</h3>
 
@@ -34,9 +34,18 @@ export default {
     data(){return{
         funText : "즐거고 재밌는",
         funIndex : -1, //this.funText.length,
+        easterEggCount : 0,
     }},
     components : {
         Header,
+    },
+    methods : {
+        easterEgg(){
+            this.easterEggCount++
+
+            if(this.easterEggCount % 10 === 0)
+                alert("대한 독립 만세")
+        }
     },
     mounted() {
         this.funIndex = this.funText.length
