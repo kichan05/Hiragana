@@ -24,7 +24,7 @@
               <button
                   @click="()=>{isHideMean = !isHideMean}" :class="{'only-border' : isHideMean}">한국어 발음 숨기기</button>
                 <button
-                    @click="()=>{isHideWell = !isHideWell}" :class="{'only-border' : isHideWell}">영어 발름 숨기기</button>
+                    @click="()=>{isHideWell = !isHideWell}" :class="{'only-border' : isHideWell}">영어 발음 숨기기</button>
             </div>
         </div>
     </div>

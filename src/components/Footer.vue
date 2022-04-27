@@ -2,11 +2,11 @@
 <footer>
   <div class="content">
     <div class="copy-light">
-      <span>Developed by <a href="https://www.github.com/ckstmznf">박희찬(ckstmznf)</a></span>
+      <span>Developed by <a href="https://www.github.com/ckstmznf" target="_blank">박희찬(ckstmznf)</a></span>
       <span>Copyright ©Heechan. All rights reserved.</span>
     </div>
     <div class="open-source">
-      <a href="https://www.github.com/ckstmznf/Hiragana">오픈소스 라이선스</a>
+      <a href="https://www.github.com/ckstmznf/Hiragana" target="_blank">오픈소스 라이선스</a>
     </div>
   </div>
 </footer>
