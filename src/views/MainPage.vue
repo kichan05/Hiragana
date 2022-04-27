@@ -42,11 +42,15 @@
             </button>
         </nav>
     </div>
+
 </div>
+  <Footer/>
 </template>
 
 <script>
 import Header from "@/components/Header";
+import Footer from "@/components/Footer"
+
 export default {
     name : "MainPage",
     data(){return{
@@ -56,6 +60,7 @@ export default {
     }},
     components : {
         Header,
+        Footer,
     },
     methods : {
         easterEgg(){
