@@ -194,6 +194,14 @@ h2 {
   .options-wrap {
     gap : 24px;
   }
+
+  .options-wrap > .option {
+      font-size: 28px;
+
+      padding: 8px 0px;
+
+      border-radius: 8px;
+  }
 }
 
 </style>

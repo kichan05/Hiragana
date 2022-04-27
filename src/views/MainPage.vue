@@ -50,7 +50,7 @@ import Header from "@/components/Header";
 export default {
     name : "MainPage",
     data(){return{
-        funText : "즐거고 재밌는",
+        funText : "즐겁고 재밌는",
         funIndex : -1, //this.funText.length,
         easterEggCount : 0,
     }},
@@ -107,7 +107,7 @@ h1 {
     background-clip: text;
     text-fill-color: transparent;
 
-  margin: 152px auto 0;
+    margin: 100px auto 0;
 
   display: inline-block;
 }
@@ -141,7 +141,7 @@ h3 {
 .button-wrap {
     width: 100%;
 
-    margin-top : 126px;
+    margin-top : 60px;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, auto));

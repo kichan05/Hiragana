@@ -189,11 +189,15 @@ h2 {
   }
 
   .question {
-    font-size: 75px;
+    font-size: 60px;
   }
 
   .options-wrap {
     gap : 24px;
+  }
+
+  .options-wrap > .option {
+      font-size: 32px;
   }
 }
 

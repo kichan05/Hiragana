@@ -105,7 +105,7 @@ export default {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
 
     display: flex;
@@ -114,7 +114,7 @@ h2 {
 }
 
 .question {
-    font-size: 200px;
+    font-size: 152px;
     font-weight: bold;
 }
 
@@ -125,7 +125,7 @@ h2 {
 
     display: flex;
     flex-direction: column;
-    gap : 48px;
+    gap : 28px;
 }
 
 .options-wrap > .option {
@@ -194,6 +194,13 @@ h2 {
 
   .options-wrap {
     gap : 24px;
+  }
+
+  .options-wrap > .option {
+      font-size: 28px;
+
+      padding: 8px 0px;
+    border-radius: 8px;
   }
 }
 
