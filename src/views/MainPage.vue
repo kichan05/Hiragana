@@ -168,6 +168,17 @@ h3 {
     cursor: pointer;
 }
 
+.button-wrap > button:hover {
+  /* background-color: #2a51ff; */
+  background-color: var(--main-color1);
+}
+
+.button-wrap > button:active {
+  opacity: 0.7;
+  transform: scale(0.985);
+}
+
+
 .button-wrap > button * {
     color: #fff;
 }
@@ -187,12 +198,4 @@ h3 {
         transform: translateY(20px);
     }
 }
-
-@media (hover: hover) {
-  .button-wrap > button:active {
-    opacity: 0.7;
-    transform: scale(0.985);
-  }
-}
-
 </style> 

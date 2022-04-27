@@ -51,6 +51,11 @@ button.only-border {
     border : 2px solid var(--main-color1);
 }
 
+button:not(.enabled-none):active {
+    opacity: 0.7;
+    transform: scale(0.985);
+}
+
 .page {
     width : 100%;
     min-height : 100vh;
@@ -77,11 +82,4 @@ button.only-border {
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-}
-
-@media (hover: hover) {
-    button:not(.enabled-none):active {
-        opacity: 0.7;
-        transform: scale(0.985);
-    }
 }
