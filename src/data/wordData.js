@@ -165,7 +165,7 @@ export default [
         "id" : 28,
         "ko" : "읽다",
         "jp" : "よむ",
-        "en" : "tomu",
+        "en" : "yomu",
     },
     {
         "id" : 29,
