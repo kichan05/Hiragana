@@ -43,8 +43,8 @@
         </nav>
     </div>
 
-</div>
   <Footer/>
+</div>
 </template>
 
 <script>
@@ -86,9 +86,7 @@ export default {
 <style scoped>
 
 .page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 }
 
 .page-content {

@@ -25,8 +25,8 @@
             <button class="mode-change-btn only-border" v-else @click="questionMode =  0"><bold>뜻을</bold> 보고 히라가나를 고르기</button>
         </div>
     </div>
-</div>
   <Footer/>
+</div>
 </template>
 
 <script>
