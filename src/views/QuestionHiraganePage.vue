@@ -22,7 +22,7 @@
             </div>
 
             <button class="mode-change-btn only-border" v-if="questionMode === 0" @click="questionMode = 1"><bold>히라가나를</bold> 보고 뜻을 고르기</button>
-            <button class="mode-change-btn only-border" v-else @click="questionMode =  0"><bold>뜻을</bold> 보고 히라가나를 고르기</button>
+            <button class="mode-change-btn only-border" v-else-if="questionMode === 1" @click="questionMode =  0"><bold>뜻을</bold> 보고 히라가나를 고르기</button>
         </div>
     </div>
 </div>
@@ -79,8 +79,8 @@ export default {
         }
       }
     },
-    mounted() {
-        if(this.questionMode == undefined) this.questionMode = 0
+    beforeMount() {
+        if(this.questionMode === undefined) this.questionMode = 0
         this.setQuestion()
     }
 }
