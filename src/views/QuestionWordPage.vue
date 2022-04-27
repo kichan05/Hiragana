@@ -148,17 +148,6 @@ h2 {
     cursor: pointer;
 }
 
-.options-wrap > .option:hover {
-    color : #fff;
-    background-color: var(--main-color1);
-    border : 1px solid var(--main-color1);
-}
-
-.options-wrap > .option:active {
-    opacity: 0.7;
-    transform: scale(0.985);
-}
-
 .options-wrap > .option.wrong-answer {
   background-color: var(--flat-red);
   color : white;
@@ -174,13 +163,6 @@ h2 {
 .mode-change-btn {
     color: var(--main-color1);
     font-size: 24px;
-}
-
-.mode-change-btn:hover {
-    color: white;
-    background-color: var(--main-color1);
-
-    transition: 200ms;
 }
 
 @media (max-width: 900px) {
@@ -201,6 +183,26 @@ h2 {
 
       padding: 8px 0px;
     border-radius: 8px;
+  }
+}
+
+@media (hover: hover) {
+  .options-wrap > .option:hover {
+    color : #fff;
+    background-color: var(--main-color1);
+    border : 1px solid var(--main-color1);
+  }
+
+  .options-wrap > .option:active {
+    opacity: 0.7;
+    transform: scale(0.985);
+  }
+
+  .mode-change-btn:hover {
+    color: white;
+    background-color: var(--main-color1);
+
+    transition: 200ms;
   }
 }
 
