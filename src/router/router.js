@@ -4,6 +4,7 @@ import MainPage from "./../views/MainPage.vue"
 import QuestionPage from "../views/QuestionWordPage.vue"
 import WordPage from "./../views/WordPage.vue"
 import QuestionHiraganaPage from "./../views/QuestionHiraganePage"
+import HiraganaPage from "@/views/HiraganaPage";
 
 const routes = [
     {
@@ -25,6 +26,11 @@ const routes = [
         path: "/word",
         name : "word",
         component: WordPage,
+    },
+    {
+        path: "/hiragana",
+        name : "hiragana",
+        component: HiraganaPage,
     },
 ];
 

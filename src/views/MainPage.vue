@@ -36,7 +36,7 @@
                 <span class="bold">히라가나를 맞추기</span>
             </button>
             <button
-                @click="$router.push({name : 'word'})">
+                @click="$router.push({name : 'hiragana'})">
                 <span>히라가나를</span>
                 <span class="bold">하나씩 넘겨 보기</span>
             </button>
