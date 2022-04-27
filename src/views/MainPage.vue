@@ -49,7 +49,7 @@
 
 <script>
 import Header from "@/components/Header";
-import Footer from "@/components/Footer"
+import Footer from "@/components/Footer";
 
 export default {
     name : "MainPage",

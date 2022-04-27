@@ -26,6 +26,7 @@
         </div>
     </div>
 </div>
+  <Footer/>
 </template>
 
 <script>
@@ -33,6 +34,7 @@ import * as util from "./../util/util.js"
 import wordData from "./../data/wordData"
 
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 let wordList = util.shuffle(wordData)
 let optionList = util.shuffle(wordList.slice(0, 5))
@@ -51,6 +53,7 @@ export default {
     }},
     components : {
         Header,
+        Footer,
     },
     methods : {
       setQuestion(){

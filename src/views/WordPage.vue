@@ -29,6 +29,7 @@
         </div>
     </div>
 </div>
+  <Footer/>
 </template>
 
 <script>
@@ -36,7 +37,7 @@ import * as util from "./../util/util.js"
 import wordData from "./../data/wordData.js"
 
 import Header from "@/components/Header";
-
+import Footer from "@/components/Footer";
 export default {
     name: "QuestionPage",
     data() {
@@ -51,6 +52,7 @@ export default {
     },
     components: {
         Header,
+        Footer,
     },
     methods: {
         setHiragana() {

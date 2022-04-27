@@ -26,11 +26,13 @@
         </div>
     </div>
 </div>
+  <Footer/>
 </template>
 
 <script>
 import * as util from "./../util/util.js"
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import hiragana from "@/data/hiragana";
 
 let hiraganaList = util.shuffle(hiragana)
@@ -50,6 +52,7 @@ export default {
     }},
     components : {
         Header,
+        Footer,
     },
     methods : {
       setQuestion(){
