@@ -9,9 +9,9 @@
 
             <nav class="button-wrap word">
                 <button
-                        @click="$router.push({name : 'verb_type'})">
-                    <span>동사의</span>
-                    <span class="bold">종류 문제 학습</span>
+                        @click="$router.push({name : 'word'})">
+                    <span class="bold">6과</span>
+                    <span>단어 암기</span>
                 </button>
             </nav>
 

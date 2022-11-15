@@ -5,9 +5,9 @@
     <div class="page-content">
 
         <div class="title">
-            <div class="question">{{ isHideHiragana ? '???' : wordData.jp }}</div>
+            <div class="question">{{ isHideJp ? '???' : wordData.jp }}</div>
             <div class="pronunciation">
-                {{ isHideMean ? '???' : wordData.ko }}, {{ isHideWell ? '???' : wordData.en }}
+                {{ isHideMean ? '???' : wordData.ko }}
             </div>
         </div>
 
@@ -19,9 +19,7 @@
 
             <div class="option-wrap">
                 <button
-                    @click="()=>{isHideHiragana = !isHideHiragana}" :class="{'only-border' : isHideHiragana}">히라가나 숨기기</button>
-                <button
-                    @click="()=>{isHideWell = !isHideWell}" :class="{'only-border' : isHideWell}">음 숨기기</button>
+                        @click="()=>{isHideJp = !isHideJp}" :class="{'only-border' : isHideJp}">히라가나 숨기기</button>
                 <button
                     @click="()=>{isHideMean = !isHideMean}" :class="{'only-border' : isHideMean}">뜻 숨기기</button>
             </div>
@@ -33,10 +31,11 @@
 
 <script>
 import * as util from "./../util/util.js"
-import wordData from "./../data/wordData.js"
+import wordData from "./../data/word_6"
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
 export default {
     name: "QuestionPage",
     data() {
@@ -44,8 +43,7 @@ export default {
             idx: 0,
             wordDataList: util.shuffle(wordData),
             wordData: {},
-            isHideHiragana : false,
-            isHideWell : false,
+            isHideJp : false,
             isHideMean : false,
         }
     },

@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 import MainPage from "./../views/MainPage.vue"
-import VerbTypePage from "@/views/VerbTypePage";
+import WordPage from "@/views/WordPage";
 
 const routes = [
     {
@@ -10,10 +10,10 @@ const routes = [
         component: MainPage,
     },
     {
-        path: "/verbType",
-        name: "verb_type",
-        component: VerbTypePage
-    }
+        path: "/word",
+        name : "word",
+        component: WordPage,
+    },
     // {
     //     path: "/question",
     //     name : "questionWord",
@@ -23,11 +23,6 @@ const routes = [
     //     path: "/questionHiragana",
     //     name : "questionHiragana",
     //     component: QuestionHiraganaPage,
-    // },
-    // {
-    //     path: "/word",
-    //     name : "word",
-    //     component: WordPage,
     // },
     // {
     //     path: "/hiragana",
