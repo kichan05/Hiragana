@@ -2,7 +2,7 @@
 <footer>
   <div class="content">
     <div class="copy-light">
-      <span>Developed by <a href="https://www.github.com/ckstmznf" target="_blank">박희찬(ckstmznf)</a></span>
+      <span>Developed by <a href="https://www.github.com/kichan05" target="_blank">박희찬(ckstmznf)</a></span>
       <span>Copyright ©Heechan. All rights reserved.</span>
     </div>
     <div class="open-source">

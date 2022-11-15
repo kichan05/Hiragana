@@ -1,5 +1,5 @@
 :root {
-    --main-color1 : #4742ff;
+    --main-color1 : #7059FF;
     --main-color2 : #00bdf9;
 
     --gray0 : #f8f9fa;
@@ -31,7 +31,7 @@ bold {
 button {
     color: #fff;
 
-    padding : 10px 0;
+    padding : 20px 0;
 
     border : 1px solid var(--main-color1);
     border-radius: 12px;

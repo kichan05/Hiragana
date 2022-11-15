@@ -114,7 +114,8 @@ h2 {
 }
 
 .question {
-    font-size: 200px;
+  color: red;
+    font-size: 100px;
     font-weight: bold;
 }
 

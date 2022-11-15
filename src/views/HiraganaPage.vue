@@ -93,14 +93,14 @@ export default {
 }
 
 .question {
-    font-size: 200px;
+    font-size: 90px;
     font-weight: bold;
 }
 
 .pronunciation {
     color : var(--gray6);
 
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
 }
@@ -108,11 +108,11 @@ export default {
 .button-wrap {
     width : 100%;
 
-    margin-top : 188px;
+    margin-top : 140px;
 
     display: flex;
     flex-direction: column;
-    gap : 95px;
+    gap : 40px;
 }
 
 .prev-next-wrap {
@@ -126,17 +126,19 @@ export default {
 .option-wrap {
     display: flex;
     flex-direction: column;
-    gap : 20px;
+    gap : 12px;
 }
 
 button {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 600;
+
+    padding: 12px 0;
 }
 
 @media (max-width: 900px) {
     .question {
-        font-size: 100px;
+        font-size: 80px;
     }
 }
 </style>
