@@ -9,49 +9,16 @@
 
             <nav class="button-wrap word">
                 <button
+                        @click="$router.push({name : 'questionWord'})">
+                    <span>6과</span>
+                    <span class="bold">단어 문제 풀기</span>
+                </button>
+                <button
                         @click="$router.push({name : 'word'})">
-                    <span class="bold">6과</span>
-                    <span>단어 암기</span>
+                    <span>6과</span>
+                    <span class="bold">단어 암기</span>
                 </button>
             </nav>
-
-            <!--
-            <nav class="button-wrap word">
-                <button
-                    @click="$router.push({name : 'questionWord', params : {'mode' : 0}})">
-                    <span>단어를 보고</span>
-                    <span class="bold">뜻을 맞추기</span>
-                </button>
-                <button
-                    @click="$router.push({name : 'questionWord', params : {'mode' : 1}})">
-                    <span>뜻를 보고</span>
-                    <span class="bold">단어를 맞추기</span>
-                </button>
-                <button
-                    @click="$router.push({name : 'word'})">
-                    <span>단어를</span>
-                    <span class="bold">하나씩 넘겨 보기</span>
-                </button>
-            </nav>
-
-            <nav class="button-wrap hiragana">
-                <button
-                    @click="$router.push({name : 'questionHiragana', params : {'mode' : 0}})">
-                    <span>히라가나를 보고</span>
-                    <span class="bold">음을 맞추기</span>
-                </button>
-                <button
-                    @click="$router.push({name : 'questionHiragana', params : {'mode' : 1}})">
-                    <span>음를 보고</span>
-                    <span class="bold">히라가나를 맞추기</span>
-                </button>
-                <button
-                    @click="$router.push({name : 'hiragana'})">
-                    <span>히라가나를</span>
-                    <span class="bold">하나씩 넘겨 보기</span>
-                </button>
-            </nav>
-            -->
         </div>
 
         <Footer/>
