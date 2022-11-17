@@ -26,8 +26,8 @@ footer {
     padding: 34px 16px;
     margin-top: 42px;
 
-    background: #F3F3F3;
-    border-top: 1px solid #C2C2C2;
+    background: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
     box-sizing: border-box;
 }
 

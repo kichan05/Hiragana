@@ -11,7 +11,7 @@
                 <button
                         @click="$router.push({name : 'questionWord'})">
                     <span>6과</span>
-                    <span class="bold">단어 문제 풀기</span>
+                    <span class="bold">단어 퀴즈 풀기</span>
                 </button>
                 <button
                         @click="$router.push({name : 'word'})">
@@ -144,11 +144,6 @@ h3 {
     justify-content: center;
 
     cursor: pointer;
-}
-
-.button-wrap > button:hover {
-    /* background-color: #2a51ff; */
-    background-color: var(--main-color1);
 }
 
 .button-wrap > button:active {

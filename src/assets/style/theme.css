@@ -1,6 +1,7 @@
 :root {
     --main-color1 : #6572ff;
     --main-color1-sub : #d5d7ff;
+    --main-color1-active : #5865ff;
     --main-color2 : #00bdf9;
 
     --gray0 : #f8f9fa;
@@ -55,6 +56,12 @@ button.only-border {
 button:not(.enabled-none):active {
     opacity: 0.8;
     transform: scale(0.985);
+}
+
+button:not(.only-border):hover {
+    background-color: var(--main-color1-active);
+    border-color: var(--main-color1-active);
+    /*background-color: #f00;*/
 }
 
 .page {
