@@ -135,7 +135,7 @@ h2 {
     color : var(--flat-black);
 
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
 
     padding: 12px 0;
