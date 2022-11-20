@@ -90,14 +90,14 @@ export default {
 }
 
 .question {
-    font-size: 90px;
+    font-size: 50px;
     font-weight: bold;
 }
 
 .pronunciation {
     color : var(--gray6);
 
-    font-size: 32px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
 }
@@ -135,7 +135,7 @@ button {
 
 @media (max-width: 900px) {
     .question {
-        font-size: 80px;
+        font-size: 50px;
     }
 }
 </style>

@@ -58,15 +58,15 @@ button:not(.enabled-none):active {
     transform: scale(0.985);
 }
 
-button:not(.only-border):hover {
-    background-color: var(--main-color1-active);
-    border-color: var(--main-color1-active);
-}
+/*button:not(.only-border):hover {*/
+/*    background-color: var(--main-color1-active);*/
+/*    border-color: var(--main-color1-active);*/
+/*}*/
 
-button.only-border:hover {
-    background-color: var(--main-color1-active);
-    border-color: var(--main-color1-active);
-}
+/*button.only-border:hover {*/
+/*    background-color: var(--main-color1-active);*/
+/*    border-color: var(--main-color1-active);*/
+/*}*/
 
 .page {
     width : 100%;
